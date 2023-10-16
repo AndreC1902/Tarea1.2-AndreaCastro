@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1._2_AndreaCastro.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="14"
+            HorizontalOptions="FillAndExpand">
+
+            <Frame 
+                Margin="10,5,10,16" 
+                Padding="0">
+                <Image
+                    Source="logo_uni.jpg"
+                    HorizontalOptions="Center"/>
+            </Frame>
+
+            <Frame Margin="10,0,10,-5" 
+                   Padding="5">
+                <Entry Keyboard="Text" 
+                   x:Name="txtNombres"
+                   Placeholder="Ingrese nombres"
+                   PlaceholderColor="Gray"
+                   FontSize="14"/>
+            </Frame>
+
+            <Frame Margin="10,0,10,-5" 
+                   Padding="5">
+                <Entry Keyboard="Text" 
+                   x:Name="txtApellidos" 
+                   Placeholder="Ingrese apellidos"
+                   PlaceholderColor="Gray"
+                   FontSize="14"/>
+            </Frame>
+
+            <Frame CornerRadius="8" 
+                   Margin="10,0,10,-5" 
+                   Padding="5" >
+                <DatePicker
+                x:Name="dpFecha"
+                FontSize="14"/>
+            </Frame>
+
+            <Frame Margin="10,0,10,-5" 
+                   Padding="5">
+                <Entry Keyboard="Email" 
+                   x:Name="txtCorreo" 
+                   Placeholder="Ingrese correo"
+                   PlaceholderColor="Gray"
+                   FontSize="14"/>
+            </Frame>
+
+            <Button Text="Agregar" 
+                    Margin="10" 
+                    FontAttributes="Bold"
+                    BackgroundColor="#8bc34a" 
+                    TextColor="White"
+                    Clicked="btnAgregar"
+                    FontSize="14"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
